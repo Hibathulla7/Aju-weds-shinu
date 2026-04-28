@@ -18,9 +18,21 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--color-bg);
+    /* Changed from solid hex to rgba to allow the animation canvas to subtly show through */
+    background-color: rgba(174, 158, 143, 0.85); 
     color: var(--color-text-light);
     overflow-x: hidden;
+}
+
+/* --- CANVAS ANIMATION --- */
+#animation-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
 }
 
 /* Typography */
